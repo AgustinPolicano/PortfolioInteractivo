@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./assets/fonts/montserrat.regular.ttf";
+import "./assets/fonts/Minecraft.ttf";
+import "./assets/fonts/alagard.ttf";
 
 ReactDOM.render(
   <React.StrictMode>

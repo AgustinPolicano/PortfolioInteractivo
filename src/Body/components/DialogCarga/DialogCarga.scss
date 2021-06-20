@@ -1,0 +1,84 @@
+a{
+    text-decoration: none;
+    position: relative;
+
+}
+a:hover{
+
+    color: orange;
+}
+p{
+    position: relative;
+    font-family: "Montserrat";
+    animation: lineaGradient 2.5s;
+    animation-fill-mode : forwards;
+    font-size: 16px;
+    margin-top: 15px;
+
+}
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: orange;
+  }
+ .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  } 
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+@keyframes lineaGradient{
+    0%{
+        transform: translateX(100px);
+
+    }
+    100%{
+    }
+  
+}
+
+.btn-empezamos{
+    font-family: "Montserrat";
+    border: none;
+    width: 40%;
+    font-size: 13px;
+    height: 30px;
+    border-radius: 5px;
+    color: #060609;
+    animation: fade1 4s;
+    animation-fill-mode : forwards;
+    position: relative;
+    background-color: orange;
+    margin-bottom: 10px;
+
+
+}
+.btn-empezamos:hover{
+    background-color: #060609;
+    width: 60%;
+    transition: 1.5s;
+    color: white;
+}
+
+@keyframes fade1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

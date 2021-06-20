@@ -1,0 +1,177 @@
+.wrapper {
+    position: absolute;
+    width: 100%;
+/*     display: flex; */
+    justify-content: center; // Centers the item
+    bottom: 20px; // Moves it up a little from the bottom
+}
+
+.textDialog {
+    font-size: 20px;
+    color: white;
+    font-family: "Alagard";
+    text-align: initial;
+}
+.pixelDialog {
+    width: 50%;
+    background-color: #121218;
+    height: auto;
+}
+
+.pixelDialogArriba {
+    width: 20%;
+    background-color: #121218;
+    height: auto;
+}
+
+.gifFace {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #060609;
+
+    border-radius: 15px;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.buttonclear{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typewriter2 h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+    animation: fade 3.5s, typing 3.5s steps(40, end) 3.5s, blink-caret 0.75s step-end infinite;
+}
+
+.typewriter3 h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+    animation: fade 7s, typing 3.5s steps(40, end) 7s, blink-caret 0.75s step-end infinite;
+}
+
+.typewriter4 h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+    animation: fade 10.5s, typing 3.5s steps(40, end) 10.5s, blink-caret 0.75s step-end infinite;
+}
+
+.typewriter5 h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+    animation: fade 14s, typing 1.5s steps(40, end) 14s, blink-caret 0.75s step-end infinite;
+}
+
+.texto4:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4,end) 1.5s infinite;      
+    animation: ellipsis steps(4,end) 1.5s infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
+    font-size: 20px;
+  }
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.ellipsis i {
+    opacity: 0;
+    animation: dot  1.3s infinite;
+    animation-delay: 0.0s;
+    margin-left: 5px;
+}
+
+.ellipsis i+i {
+    opacity: 0;
+        animation: dot 1.3s infinite;
+    animation-delay: 0.2s;
+}
+
+.ellipsis i+i+i {
+    opacity: 0;
+    animation: dot  1.3s infinite;
+    animation-delay: 0.3s;
+}
+
+@keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.velaImg{
+    width: 4%;
+    opacity: 0.2;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 40%;
+
+}
